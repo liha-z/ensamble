@@ -1,0 +1,10 @@
+"Act like you are an algorithm that is used to extract particular features from the text.
+Now, I gave you a text:{user_input} by {name}. 
+If this text, {name} is telling about their study interest and values. Your task is to extract all the keywords related to their interests. For example, if a user is talking about his passion to find a cure for Alzheimer's, output in a list format all the associated fields, like,
+"neurology:4, Alzheimer's research:8, neuropathology:6".
+Try to come up with at least 7-8 list elements and a maximum of 15. The numbers associated define superset and subset, like if A is a superset of B, then I get a lower score and B gets a higher score. Like Alzheimer's research is a subset of neuropathology, so it gets a higher score than neuropathology.
+
+If the text is gibberish or contains meaningless content, then output:
+"ill-defined text"
+
+Important note: Only output the list with no additional text. 
